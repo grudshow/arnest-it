@@ -1,0 +1,23 @@
+.why-us {
+	text-align: center;
+	max-width: 717px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	/* .why-us__title */
+	&__title {
+		display: inline-block;
+		font-size: 30px;
+		text-transform: uppercase;
+		position: relative;
+		margin: 0 0 20px 0;
+		&:after{
+			@include green-box;
+		}
+	}
+	/* .why-us__subtitle */
+	&__subtitle {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+		line-height: 24px;
+	}
+}

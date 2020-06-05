@@ -1,0 +1,103 @@
+.services {
+	max-width: 950px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	/* .services__title */
+	// ЦЕНТИРОВАНИЕ ТИТУЛА
+	&__center-text{
+		text-align: center;
+	}
+	&__title {
+		margin: 0 0 100px 0;
+		display: inline-block;
+		font-size: 30px;
+		text-transform: uppercase;
+		position: relative;
+		&:after{
+			@include green-box;
+		}
+	}
+
+	/* .services__items */
+	&__items {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	/* .services__item */
+	&__item {
+		margin: 0 0 25px 0;
+		display: flex;
+		justify-content: space-between;
+		box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+		background-color: #ffffff;
+		position: relative;
+		transition: 0.3s;
+		&:hover{
+			transform: scale(1.01);
+			box-shadow: 0 0 50px rgba(0,0,0,.2);
+		}
+		&:last-child{
+			margin: 0;
+		}
+	}
+	&__item *{
+	}
+	/* .services__item-img */
+	&__item-img {
+		img{
+			height: 240px;
+			min-width: 350px;
+			width: 350px;
+		}
+	}
+
+	&__text{
+		padding: 25px;
+		border-top:5px solid #7beec7;
+		position: relative;
+		&:after{
+			background: url("../../img/services/services05.png") 0 0 no-repeat;
+			width: 15px;
+			height: 15px;
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+
+	/* .services__item-title */
+	&__item-title {
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	/* .services__item-subtitle */
+	&__item-subtitle {
+		margin:20px 0 0 0;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	&__button{
+		position: absolute;
+		right: 0;
+		bottom: 5px;
+		a{
+			color: #fff;
+			font-size: 14px;
+			line-height: 48px;
+			text-transform: uppercase;
+			background-color: #7beec7;
+			padding: 20px;
+			transition: 0.3s;
+			&:hover{
+				transform: scale(1.01);
+				box-shadow: 0 0 10px rgba(0,0,0,.4);
+			}
+		}
+	}
+}

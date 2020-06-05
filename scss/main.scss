@@ -1,0 +1,55 @@
+@mixin green-box{
+	content: "";
+	position: absolute;
+	left: 0;
+	z-index: -1;
+	top: 50%;
+	width: 68px;
+	height: 21px;
+	background-color: #7beec7;
+}
+
+// ШРИФТЫ
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+// ОБНУЛЕНИЯ
+@import "base/_clean";
+// Базовые стили
+@import "base/_base.scss";
+
+// Блоки со стилями
+
+// HEADER
+@import "blocks/_header-top.scss";
+@import "blocks/_header-content.scss";
+@import "blocks/_header-footer.scss";
+// HEADER OTHER LINKS
+@import "other-links/_header-otherlinks.scss";
+
+
+//CONTENT-CENTER
+@import "blocks/_why-us.scss";
+@import "blocks/_options.scss";
+@import "blocks/_services.scss";
+@import "blocks/_feedback.scss";
+
+//CONTENT CONTACTS
+@import "other-links/_contact.scss";
+//CONTENT NEWS
+@import "other-links/_news.scss";
+// CONTENT NEWS SINGLE
+@import "other-links/_news-single.scss";
+// СONTENT SERVICES
+@import "other-links/_services-main.scss";
+// СONTENT SERVICES-PAGE
+@import "other-links/_services-page.scss";
+
+
+//БЛОК ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
+@import "blocks/_call-to-action.scss";
+
+//БЛОК С КЛЮЧЕВЫМИ ОТРАСЛЯМИ
+@import "blocks/_key_industries.scss";
+
+// ВЕРТИКАЛЬНАЯ НАВИГАЦИЯ
+@import "blocks/_sidebar-menu.scss";
+

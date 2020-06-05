@@ -1,0 +1,86 @@
+.contact {
+	/* .contact__info */
+	margin: 0 0 80px 0;
+	&__raw{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__info {
+		color: $color-light;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 20px;
+		line-height: 30px;
+		div{
+			margin: 0 0 20px 0;
+		}
+	}
+
+	/* .contact__info-title */
+
+	&__info-title {
+		font-family: Montserrat;
+		color: $color-black;
+		font-size: 25px;
+		margin: 0 0 25px 0;
+		text-transform: uppercase;
+		&:last-child{
+			margin: 50px 0 0 0;
+		}
+	}
+
+
+	/* .contact__info-address */
+
+	&__info-address {
+	}
+
+	/* .contact__info-index */
+
+	&__info-index {
+	}
+
+	/* .contact__info-tel */
+
+	&__info-tel {
+		display: block;
+		a{
+			color: $color-light;
+			&:hover{
+				opacity: 0.6;
+			}
+		}
+	}
+
+	/* .contact__info-mail */
+
+	&__info-mail {
+		color: $color-black;
+		position: relative;
+		a{
+			&:after{
+				content: "";
+				position: absolute;
+				bottom: -5px;
+				left: 0;
+				width: 0;
+				height: 1px;
+				transition: all .2s ease-in-out;
+			}
+			&:hover:after{
+				background-color: #7beec7;
+				width: 50%;
+			}
+		}
+
+	}
+
+	/* .contact__maps */
+
+	&__maps {
+	}
+}

@@ -1,0 +1,46 @@
+.header-otherlinks {
+	background: url("../../img/other-links/bg_contact.png") 0 0/cover no-repeat;
+	// max-height: 500px;
+	height: 100%;
+	overflow: hidden;
+	margin: 0 0 80px 0;
+	/* .header-otherlinks__text */
+	&__text {
+		margin: 200px 0 0 0;
+		color: $color-black;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__title{
+		display: inline;
+		font-size: 36px;
+		position: relative;
+		line-height: 130%;
+		&:after{
+			@include green-box; 
+		}
+	}
+
+	/* .header-otherlinks__links */
+	&__links {
+		margin: 28px 0 0 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	/* .header-otherlinks__link */
+	&__link {
+		margin: 0 5px 0 0;
+		&:last-child{
+			margin: 0;
+		}
+		a{
+			color: $color-black;
+			&:hover{
+				opacity: 0.6;
+			}
+		}
+
+	}
+}

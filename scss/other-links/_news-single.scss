@@ -1,0 +1,130 @@
+.news-single {
+	margin: 0 0 80px 0;
+	/* .news-single__content */
+	&__content {
+		width: calc(100%-240px);
+	}
+	
+	/* .news-single__content-img */
+	&__content-img {
+		img{
+			width: 100%;
+		}
+	}
+
+	/* .news-single__content-data */
+	&__content-data {
+		margin: 30px 0 0 0;
+	}
+
+	/* .news-single__content-date */
+	&__content-date {
+		display: inline-block;
+		padding: 10px 18px;
+		color: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+		background-color: #7beec7;
+		margin: 0 38px 0 0;
+	}
+
+	/* .news-single__content-eye */
+	&__content-eye {
+		display: inline-block;
+		position: relative;
+		color: $color-black;
+		font-size: 14px;
+		text-transform: uppercase;
+		&:after{
+			content: "";
+			background: url('https://api.iconify.design/icomoon-free:eye.svg?color=gray') no-repeat center center / contain;
+			position: absolute;
+			bottom: -1px;
+			left: -25px;
+			width: 16px;
+			height: 16px;
+		}
+	}
+
+	/* .news-single__content-text */
+	&__content-text {
+		p{
+			color: $color-light;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 18px;
+			line-height: 30px;
+			margin: 0 0 18px 0;
+			&:last-child{
+				margin: 0;
+			}
+		}
+	}
+
+	/* .news-single__content-title */
+	&__content-title {
+		margin: 20px 0;
+		color: $color-black;
+		font-size: 24px;
+		line-height: 40px;
+		text-transform: uppercase;
+	}
+
+	/* .news-single__content-paragraph */
+	// &__content-paragraph {
+	// 	color: $color-light;
+	// 	font-family: 'Open Sans', sans-serif;
+	// 	font-size: 18px;
+	// 	line-height: 30px;
+	// 	margin: 0 0 18px 0;
+	// 	&:last-child{
+	// 		margin: 0;
+	// 	}
+	// }
+
+
+	/* .news-single__content-toback */
+	&__content-toback {
+		margin: 30px 0 0 0;
+		padding: 0 0 0 20px;
+		// border: 1px solid red;
+		a{
+			position: relative;
+			font-size: 14px;
+			text-transform: uppercase;
+			color: $color-black;
+			text-decoration: none;
+			bottom: 0;
+			width: 0;
+			height: 0;
+			transition: 1s all ease;
+			&:before{
+				content: '';
+				position: absolute;
+				background: url('https://api.iconify.design/heroicons-solid:arrow-narrow-left.svg?color=gray') no-repeat center center / contain;
+				width: 20px;
+				height: 20px;
+				left: -20px;
+				top: -2px;
+			}
+			&:after{
+				content:"";
+				position: absolute;
+				bottom: -10px;
+				right: 0;
+				width: 0;
+				height: 2px;
+				opacity: 0;
+				background-color: #7beec7;
+				transition: 0.2s;
+			}
+			&:hover:after{
+				opacity: 1;
+				width: 70%;
+			}
+		}
+	}
+
+	/* .news-single__posts */
+	&__posts {
+	}
+}

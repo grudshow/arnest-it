@@ -1,0 +1,40 @@
+.key-industries {
+	padding:40px;
+	background: url("../../img/key-industries_bg.png") bottom -40px right 60px/418px no-repeat #F2F6F9;
+
+	// .key-industries__title
+	&__title {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 16px;
+		margin: 0 0 25px;
+		line-height: 130%;
+	}
+	// .key-industries__list
+	&__list {
+		width: 50%;
+	}
+	// .key-industries__list-nav
+	&__list-nav {
+		li{
+			font-size: 22px;
+			line-height: 120%;
+			margin: 0 0 10px;
+			padding:0 0 0 18px;
+			position: relative;
+			&:last-child{
+				margin: 0;
+			}
+			&:before{
+				content: "";
+				line-height: 100%;
+				background-color: #7beec7;
+				border-radius: 50%;
+				width: 8px;
+				height: 8px;
+				position: absolute;
+				top: 10px;
+				left: 0;
+			}
+		}
+	}
+}
